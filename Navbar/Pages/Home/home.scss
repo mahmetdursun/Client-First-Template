@@ -1,0 +1,725 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap";
+// justify ve margin yapılarını tekrar düzenle
+//991px de why we started fazla geliyor
+//767px de featured post fazla geliyor
+//400px de jınathan vallem fazla geliyor
+//300px de 6 lı logo fazla geliyor 
+// Değişkenler
+$black: black;
+$white: white;
+$color-dark-grey: #343a40;
+$usc-gold: #ffcc00;
+$canary-diamond: #ffd050;
+$clear-moon: #fbf6ea;
+$royalty: #592ea9;
+$cold-steel: #232536;
+$alpine-goat: #f4f0f8;
+$granite-canyon: #6d6e76;
+$shady-character: #4c4c4c;
+$ff-sen: "Sen", sans-serif;
+$ff-inter: "Inter", sans-serif;
+
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-36: 36px;
+$fs-48: 48px;
+$fs-56: 56px;
+
+$lh-20: 20px;
+$lh-28: 28px;
+$lh-32: 32px;
+$lh-36: 36px;
+$lh-48: 48px;
+$lh-64: 64px;
+
+.finsweet-project-page {
+  // Navbar
+  &__navbar {
+    background-color: $cold-steel;
+    height: 80px;
+    &-brand {
+      padding-left: 83px;
+    }
+
+    &-collapse {
+      padding-right: 32px;
+    }
+
+      & .navbar-click {
+        color: $white;
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+
+        &:hover {
+          color: $usc-gold;
+        }
+    }
+    &-Subscribe {
+      padding-top: 12px;
+      padding-right: 80px;
+  
+      & .navbar-click {
+        color: $black;
+        background-color: $white;
+        font-family: $ff-sen;
+        font-size: $fs-18;
+        width: 179px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+      }
+  }
+  }
+
+  // Hero image
+
+  &-hero {
+    margin-top: 80px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    ), url("/Navbar/İmages/home-page.jpg") no-repeat center center;
+    background-size: cover;
+    height: 720px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.6), transparent 60%);
+        z-index: 2;
+    }
+
+    &-text {
+      position: absolute;
+      padding-top: 128px;
+      
+      color: $white;
+      text-align: left;
+      font-family: $ff-sen;
+      z-index: 3; 
+
+      &-tag {
+
+        &-name {
+          font-family: $ff-inter;
+          font-size: $fs-16;
+        }
+
+        &-span {
+          font-family: $ff-inter;
+        }
+      }
+
+      &-title {
+        font-family: $ff-sen;
+        font-size: $fs-56;
+        line-height: $lh-64;
+        padding-top: 28px;
+      }
+
+      &-author {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        padding-top: 28px;
+
+        &-name {
+          color: $canary-diamond;
+        }
+      }
+
+      &-description {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        padding-top: 16px;
+      }
+
+      &-wrapper {
+        padding-top: 48px;
+
+        &-button {
+          font-family: $ff-sen;
+          font-size: $fs-18;
+          font-weight: bold;
+          border-radius: 0;
+          height: 56px;
+          width: 204px;
+        }
+      }
+    }
+  }
+
+
+  // Container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px; 
+    padding-bottom: 120px;
+    
+
+    &-left {
+
+      &-header {
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+
+      &-structure {
+        padding-bottom: 32px;
+        box-sizing: border-box;
+        border: 1px solid #a0a0a0;
+
+        &-image {
+          padding: 32px;
+        }
+
+        &-author {
+          font-family: $ff-sen;
+          font-size: $fs-14;
+          line-height: $lh-20;
+          padding-left: 32px;
+
+          &-name {
+            color: $royalty;
+          }
+        }
+
+        &-title {
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          padding-left: 32px;
+        }
+
+        &-description {
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          padding-left: 32px;
+        }
+      }
+
+      &-wrapper {
+        padding-left: 32px;
+      }
+
+      &-button {
+        font-family: $ff-sen;
+        font-size: $fs-18;
+        font-weight: bold;
+        border-radius: 0;
+        height: 56px;
+        width: 204px;
+        padding-inline: 32px;
+      }
+    }
+
+    &-right {
+
+      &-header {
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+
+      &-info {
+        position: relative;
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $royalty;
+      }
+
+      &-group {
+        &-part{
+
+          &-one {
+            padding: 10px;
+    
+            &-name {
+              padding-left: 32px;
+              font-family: $ff-sen;
+              font-size: $fs-14;
+              line-height: $lh-20;
+            }
+            
+            &-info {
+              font-family: $ff-sen;
+              font-weight: bold;
+              font-size: $fs-24;
+              line-height: $lh-32;
+              padding-left: 32px;
+              margin-bottom: 25px;
+            }
+          }
+  
+          &-two {
+            padding: 10px;
+            background-color: $clear-moon;
+          }
+        }
+      }
+    }
+  }
+
+  &-abouts {
+    display: flex;
+    
+    &-block {
+      background-color: $alpine-goat;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        background: linear-gradient(to right, $canary-diamond 80%, $royalty 20%);
+      }
+  
+      &-left {
+       padding-top: 50px;
+        
+        &-header {
+          font-size: $fs-16;
+          line-height: $lh-20;
+          font-weight: bold;
+        }
+  
+        &-text {
+          
+          font-family: $ff-sen;
+          color: $cold-steel;
+          font-size: $fs-36;
+          line-height: $lh-48;
+        }
+  
+        &-info {
+          
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+  
+        &-link {
+          
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-18;
+          margin-bottom: 96px;
+  
+          &-color {
+            color: $royalty;
+          }
+        }
+      }
+  
+      &-right {
+        
+        &-header {
+          
+          
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-20;
+          font-weight: bold;
+        }
+  
+        &-text {
+          
+          font-family: $ff-sen;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          color: $cold-steel;
+        }
+  
+        &-info {
+          
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+    }
+  }
+  
+  
+
+  &-catagory {
+    padding-top: 128px;
+
+    &-header {
+      font-family: $ff-sen;
+      font-weight: bold;
+      font-size: $fs-36;
+      line-height: $lh-48;
+    }
+    &-block{
+      
+      &-image{
+        width: 48px;
+        height: 48px;
+        margin-top: 32px;
+        margin-left: 30px;
+        background-color: $clear-moon;
+      }
+      
+      &-texts{
+        &-head{
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+        }
+
+        &-subject{
+          
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+    }
+   
+    &-startup{
+      
+      &-texts{
+       padding-inline: 32px;
+
+        &-head{
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+        }
+
+        &-subject{
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+
+      &-images{
+        width: 48px;
+        height: 48px;
+        margin-top: 32px;
+        margin-left: 30px;
+        background-color: $clear-moon;
+
+        &-two{
+          padding: 13px;  
+        }
+      }
+    }
+  }
+
+
+  &-started {
+    padding-top: 128px;
+    position: relative;
+    &-image{
+      overflow: hidden;
+    }
+    &-structure {
+      // background-color: $white;
+      background-color: aquamarine;
+      &-header {
+        padding-top: 32px;
+        font-size: $fs-16;
+        line-height: $lh-20;
+      }
+  
+      &-info {
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-48;
+        line-height: $lh-64;
+      }
+  
+      &-text {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+      }
+  
+      &-button {
+        &-click {
+          font-family: $ff-sen;
+          font-size: $fs-18;
+          font-weight: bold;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  
+  &-list {
+    padding-top: 128px;
+    
+    &-header {
+      font-family: $ff-sen;
+      font-weight: bold;
+      font-size: $fs-36;
+      line-height: $lh-48;
+    }
+
+    &-block{
+
+      &-two{
+        background-color: $clear-moon !important;
+      }
+
+      &-image{
+        padding-top: 40px;
+        max-width: 100%;
+      }
+
+      &-texts{
+
+        &-head{
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+        }
+
+        &-subject{
+          font-family: $ff-sen;
+          font-size: $fs-14;
+          line-height: $lh-20;
+          color: $granite-canyon;
+        }
+
+        &-icons{
+          &-logo{
+            padding-inline: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &-logos{
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    &-right{
+      padding-top: 12px;
+    }
+  }
+
+
+
+  &-slider {
+    background-color: $clear-moon;
+
+    &-left {
+      padding-block: 90px;
+  
+      &-header {  
+        font-size: $fs-16;
+        line-height: $lh-20;
+        font-weight: bold;
+      }
+
+      &-text {   
+        font-family: $ff-sen;
+        color: $cold-steel;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+
+      &-info {     
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+    }
+
+    &-right {
+        
+      &-text {
+        font-family: $ff-sen;
+        font-size: $fs-24;
+        line-height: $lh-32;
+        color: $cold-steel;
+        font-weight: bold;
+      }
+
+      &-info {
+        padding-top: 121px;
+        padding-bottom: 75px;
+        
+        &-name{
+          font-family: $ff-sen;
+          font-size: $fs-24;
+          line-height: $lh-32;
+          font-weight: bold;
+        }
+
+        &-buttons{
+          &-before{
+            width: 48px;
+            height: 48px;
+          }
+
+          &-after{
+            padding-left: 10px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  &-join{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    align-items: center;
+
+    &-block{
+
+      &-head{
+        font-family: $ff-sen;
+        color: $cold-steel;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+      &-button{
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-18;
+      }
+    }
+  }
+
+  &-footer{
+    background-color: $cold-steel;
+
+    &-below{ 
+      &-link{
+        margin-bottom: 55px;
+        &-hamburger{
+          background-color: $canary-diamond !important;
+        }
+      }
+
+      &-subscribe{
+        margin-bottom: 48px;
+        background-color: $shady-character;
+        padding: 80px;
+
+        &-left{
+          &-text{
+            font-family: $ff-sen;
+            font-size: $fs-36;
+            line-height: $lh-48;
+            padding-left: 64px;
+          }
+        }
+
+        &-right {
+          &-form {
+              & .form-control {
+                  border-radius: 0;
+                  background-color: transparent;
+                  color: $cold-steel;
+                  border: 1px solid $granite-canyon;
+                  color: $alpine-goat;
+              }
+
+              & .btn{
+                  
+                  background-color: $canary-diamond;
+                  border-radius: 0;
+                  padding: 20px;
+                  font-family: $ff-sen;
+                  font-size: $fs-18;
+                  font-weight: bold;
+              }
+          }
+        }
+      }
+
+      &-communication{
+        &-info{
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+        &-icons{
+        
+        }
+      }
+    }   
+  } 
+  &-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $canary-diamond;
+    color: $white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    display: block; // Buton her zaman görünür olacak
+    text-align: center;
+  
+    &:hover {
+      background-color: $usc-gold;
+    }
+  
+    // Buton içeriği
+    a {
+      color: $white;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+

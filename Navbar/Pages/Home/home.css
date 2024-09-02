@@ -1,0 +1,516 @@
+@charset "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap";
+.finsweet-project-page__navbar {
+  background-color: #232536;
+  height: 80px;
+}
+.finsweet-project-page__navbar-brand {
+  padding-left: 83px;
+}
+.finsweet-project-page__navbar-collapse {
+  padding-right: 32px;
+}
+.finsweet-project-page__navbar .navbar-click {
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+.finsweet-project-page__navbar .navbar-click:hover {
+  color: #ffcc00;
+}
+.finsweet-project-page__navbar-Subscribe {
+  padding-top: 12px;
+  padding-right: 80px;
+}
+.finsweet-project-page__navbar-Subscribe .navbar-click {
+  color: black;
+  background-color: white;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  width: 179px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.finsweet-project-page-hero {
+  margin-top: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Navbar/İmages/home-page.jpg") no-repeat center center;
+  background-size: cover;
+  height: 720px;
+  position: relative;
+  z-index: 1;
+}
+.finsweet-project-page-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), transparent 60%);
+  z-index: 2;
+}
+.finsweet-project-page-hero-text {
+  position: absolute;
+  padding-top: 128px;
+  color: white;
+  text-align: left;
+  font-family: "Sen", sans-serif;
+  z-index: 3;
+}
+.finsweet-project-page-hero-text-tag-name {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+.finsweet-project-page-hero-text-tag-span {
+  font-family: "Inter", sans-serif;
+}
+.finsweet-project-page-hero-text-title {
+  font-family: "Sen", sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  padding-top: 28px;
+}
+.finsweet-project-page-hero-text-author {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 28px;
+}
+.finsweet-project-page-hero-text-author-name {
+  color: #ffd050;
+}
+.finsweet-project-page-hero-text-description {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 16px;
+}
+.finsweet-project-page-hero-text-wrapper {
+  padding-top: 48px;
+}
+.finsweet-project-page-hero-text-wrapper-button {
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0;
+  height: 56px;
+  width: 204px;
+}
+.finsweet-project-page__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.finsweet-project-page__container-left-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page__container-left-structure {
+  padding-bottom: 32px;
+  box-sizing: border-box;
+  border: 1px solid #a0a0a0;
+}
+.finsweet-project-page__container-left-structure-image {
+  padding: 32px;
+}
+.finsweet-project-page__container-left-structure-author {
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 32px;
+}
+.finsweet-project-page__container-left-structure-author-name {
+  color: #592ea9;
+}
+.finsweet-project-page__container-left-structure-title {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  padding-left: 32px;
+}
+.finsweet-project-page__container-left-structure-description {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 32px;
+}
+.finsweet-project-page__container-left-wrapper {
+  padding-left: 32px;
+}
+.finsweet-project-page__container-left-button {
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0;
+  height: 56px;
+  width: 204px;
+  padding-inline: 32px;
+}
+.finsweet-project-page__container-right-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page__container-right-info {
+  position: relative;
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #592ea9;
+}
+.finsweet-project-page__container-right-group-part-one {
+  padding: 10px;
+}
+.finsweet-project-page__container-right-group-part-one-name {
+  padding-left: 32px;
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.finsweet-project-page__container-right-group-part-one-info {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 32px;
+  margin-bottom: 25px;
+}
+.finsweet-project-page__container-right-group-part-two {
+  padding: 10px;
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-abouts {
+  display: flex;
+}
+.finsweet-project-page-abouts-block {
+  background-color: #f4f0f8;
+  position: relative;
+}
+.finsweet-project-page-abouts-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(to right, #ffd050 80%, #592ea9 20%);
+}
+.finsweet-project-page-abouts-block-left {
+  padding-top: 50px;
+}
+.finsweet-project-page-abouts-block-left-header {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.finsweet-project-page-abouts-block-left-text {
+  font-family: "Sen", sans-serif;
+  color: #232536;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-abouts-block-left-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-abouts-block-left-link {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 96px;
+}
+.finsweet-project-page-abouts-block-left-link-color {
+  color: #592ea9;
+}
+.finsweet-project-page-abouts-block-right-header {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.finsweet-project-page-abouts-block-right-text {
+  font-family: "Sen", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  color: #232536;
+}
+.finsweet-project-page-abouts-block-right-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-catagory {
+  padding-top: 128px;
+}
+.finsweet-project-page-catagory-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-catagory-block-image {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: 30px;
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-catagory-block-texts-head {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+.finsweet-project-page-catagory-block-texts-subject {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-catagory-startup-texts {
+  padding-inline: 32px;
+}
+.finsweet-project-page-catagory-startup-texts-head {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+.finsweet-project-page-catagory-startup-texts-subject {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-catagory-startup-images {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: 30px;
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-catagory-startup-images-two {
+  padding: 13px;
+}
+.finsweet-project-page-started {
+  padding-top: 128px;
+  position: relative;
+}
+.finsweet-project-page-started-image {
+  overflow: hidden;
+}
+.finsweet-project-page-started-structure {
+  background-color: aquamarine;
+}
+.finsweet-project-page-started-structure-header {
+  padding-top: 32px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.finsweet-project-page-started-structure-info {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+.finsweet-project-page-started-structure-text {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+.finsweet-project-page-started-structure-button-click {
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0;
+}
+.finsweet-project-page-list {
+  padding-top: 128px;
+}
+.finsweet-project-page-list-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-list-block-two {
+  background-color: #fbf6ea !important;
+}
+.finsweet-project-page-list-block-image {
+  padding-top: 40px;
+  max-width: 100%;
+}
+.finsweet-project-page-list-block-texts-head {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+.finsweet-project-page-list-block-texts-subject {
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6d6e76;
+}
+.finsweet-project-page-list-block-texts-icons-logo {
+  padding-inline: 10px;
+}
+.finsweet-project-page-logos {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.finsweet-project-page-logos-right {
+  padding-top: 12px;
+}
+.finsweet-project-page-slider {
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-slider-left {
+  padding-block: 90px;
+}
+.finsweet-project-page-slider-left-header {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.finsweet-project-page-slider-left-text {
+  font-family: "Sen", sans-serif;
+  color: #232536;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-slider-left-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-slider-right-text {
+  font-family: "Sen", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+  font-weight: bold;
+}
+.finsweet-project-page-slider-right-info {
+  padding-top: 121px;
+  padding-bottom: 75px;
+}
+.finsweet-project-page-slider-right-info-name {
+  font-family: "Sen", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.finsweet-project-page-slider-right-info-buttons-before {
+  width: 48px;
+  height: 48px;
+}
+.finsweet-project-page-slider-right-info-buttons-after {
+  padding-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+.finsweet-project-page-join {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  align-items: center;
+}
+.finsweet-project-page-join-block-head {
+  font-family: "Sen", sans-serif;
+  color: #232536;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-join-block-text {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-join-block-button {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.finsweet-project-page-footer {
+  background-color: #232536;
+}
+.finsweet-project-page-footer-below-link {
+  margin-bottom: 55px;
+}
+.finsweet-project-page-footer-below-link-hamburger {
+  background-color: #ffd050 !important;
+}
+.finsweet-project-page-footer-below-subscribe {
+  margin-bottom: 48px;
+  background-color: #4c4c4c;
+  padding: 80px;
+}
+.finsweet-project-page-footer-below-subscribe-left-text {
+  font-family: "Sen", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  padding-left: 64px;
+}
+.finsweet-project-page-footer-below-subscribe-right-form .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  color: #232536;
+  border: 1px solid #6d6e76;
+  color: #f4f0f8;
+}
+.finsweet-project-page-footer-below-subscribe-right-form .btn {
+  background-color: #ffd050;
+  border-radius: 0;
+  padding: 20px;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.finsweet-project-page-footer-below-communication-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffd050;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+.finsweet-project-page-top:hover {
+  background-color: #ffcc00;
+}
+.finsweet-project-page-top a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}/*# sourceMappingURL=home.css.map */

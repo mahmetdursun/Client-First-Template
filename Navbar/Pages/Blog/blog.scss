@@ -1,0 +1,370 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap";
+// justify ve margin yapılarını tekrar düzenle
+//991px de why we started fazla geliyor
+//767px de featured post fazla geliyor
+//400px de jınathan vallem fazla geliyor
+//300px de 6 lı logo fazla geliyor 
+// Değişkenler
+$black: black;
+$white: white;
+$color-dark-grey: #343a40;
+$usc-gold: #ffcc00;
+$canary-diamond: #ffd050;
+$clear-moon: #fbf6ea;
+$royalty: #592ea9;
+$cold-steel: #232536;
+$alpine-goat: #f4f0f8;
+$granite-canyon: #6d6e76;
+$shady-character: #4c4c4c;
+$ff-sen: "Sen", sans-serif;
+$ff-inter: "Inter", sans-serif;
+
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-36: 36px;
+$fs-48: 48px;
+$fs-56: 56px;
+
+$lh-20: 20px;
+$lh-28: 28px;
+$lh-32: 32px;
+$lh-36: 36px;
+$lh-48: 48px;
+$lh-64: 64px;
+
+.finsweet-project-page-blog{
+    &__navbar {
+        background-color: $cold-steel;
+        height: 80px;
+        &-brand {
+          padding-left: 83px;
+        }
+    
+        &-collapse {
+          padding-right: 32px;
+        }
+    
+          & .navbar-click {
+            color: $white;
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+    
+            &:hover {
+              color: $usc-gold;
+            }
+        }
+        &-Subscribe {
+          padding-top: 12px;
+          padding-right: 80px;
+      
+          & .navbar-click {
+            color: $black;
+            background-color: $white;
+            font-family: $ff-sen;
+            font-size: $fs-18;
+            width: 179px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+          }
+      }
+      }
+    
+    &-featured{
+        margin-top: 80px;
+        background-color: $alpine-goat;
+      &-building{
+
+        &-left{
+            padding-block: 94px;
+            &-header{
+                 font-family: $ff-sen;
+                 font-size: $fs-16;
+                 line-height: $lh-20;
+                 padding-left: 32px;
+            }
+ 
+            &-text{
+                 font-family: $ff-sen;
+                 font-size: $fs-36;
+                 line-height: $lh-48;
+                 font-weight: bold;
+                 padding-left: 32px;
+ 
+            }
+         
+             &-author {
+                 font-family: $ff-sen;
+                 font-size: $fs-14;
+                 line-height: $lh-20;
+                 padding-left: 32px;
+         
+                 &-name {
+                     color: $royalty;
+                 }
+             }
+ 
+             &-description {
+                 font-family: $ff-sen;
+                 font-size: $fs-16;
+                 line-height: $lh-28;
+                 padding-left: 32px;
+             }
+ 
+             &-wrapper {
+                 padding-left: 32px;
+ 
+               &-button {
+                 font-family: $ff-sen;
+                 font-size: $fs-18;
+                 font-weight: bold;
+                 border-radius: 0;
+                 height: 56px;
+                 width: 204px;
+                 padding-inline: 32px;
+               }
+             }
+         }
+ 
+         &-right{
+            padding-block: 80px;
+         }
+      }
+    }
+
+    &-posts{
+      padding-top: 64px;
+      &-header{
+        
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-48;
+        line-height: $lh-64;
+      }
+
+      &-left{
+        &-pictures{
+          padding-block: 32px;
+
+        }
+      }
+
+      &-right{
+        
+        &-frame{
+          padding-block: 87px;
+
+          &-header{
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-20;
+            color: $royalty;
+          }
+
+          &-text{
+            font-family: $ff-sen;
+            font-weight: bold;
+            font-size: $fs-36;
+            line-height: $lh-48;
+          }
+
+          &-info{
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+            color: $granite-canyon;  
+          }
+        }
+      }
+
+      &-click{
+        padding-top: 32px;
+        &-prev{
+          font-family: $ff-sen;
+          font-size: $fs-24;
+          line-height: $lh-32;
+          color: $granite-canyon; 
+
+          &-text{
+            padding-top: 5px;
+          }
+        }
+
+        &-next{
+          font-size: $ff-sen;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-catagory {
+        padding-top: 128px;
+    
+        &-header {
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-36;
+          line-height: $lh-48;
+        }
+        &-block{
+          
+          &-image{
+            width: 48px;
+            height: 48px;
+            margin-top: 32px;
+            margin-left: 30px;
+            background-color: $clear-moon;
+          }
+          
+          &-texts{
+            &-head{
+              font-family: $ff-sen;
+              font-weight: bold;
+              font-size: $fs-28;
+              line-height: $lh-36;
+            }
+    
+            &-subject{
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-28;
+              color: $granite-canyon;
+            }
+          }
+        }
+       
+        &-startup{
+          
+          &-texts{
+           padding-inline: 32px;
+    
+            &-head{
+              font-family: $ff-sen;
+              font-weight: bold;
+              font-size: $fs-28;
+              line-height: $lh-36;
+            }
+    
+            &-subject{
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-28;
+              color: $granite-canyon;
+            }
+          }
+    
+          &-images{
+            width: 48px;
+            height: 48px;
+            margin-top: 32px;
+            margin-left: 30px;
+            background-color: $clear-moon;
+    
+            &-two{
+              padding: 13px;  
+            }
+          }
+        }
+    }
+
+    &-join{
+        padding-top: 128px;
+        padding-bottom: 128px;
+        align-items: center;
+    
+        &-block{
+    
+          &-head{
+            font-family: $ff-sen;
+            color: $cold-steel;
+            font-size: $fs-36;
+            line-height: $lh-48;
+          }
+          &-text{
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+            color: $granite-canyon;
+          }
+          &-button{
+            font-family: $ff-sen;
+            font-weight: bold;
+            font-size: $fs-18;
+          }
+        }
+    }
+
+    &-footer{
+        background-color: $cold-steel;
+    
+        &-below{ 
+          &-link{
+            margin-bottom: 55px;
+            &-hamburger{
+              background-color: $canary-diamond !important;
+            }
+          }
+    
+          &-subscribe{
+            margin-bottom: 48px;
+            background-color: $shady-character;
+            padding: 80px;
+    
+            &-left{
+              &-text{
+                font-family: $ff-sen;
+                font-size: $fs-36;
+                line-height: $lh-48;
+                padding-left: 64px;
+              }
+            }
+    
+            &-right {
+              &-form {
+                  & .form-control {
+                      border-radius: 0;
+                      background-color: transparent;
+                      color: $cold-steel;
+                      border: 1px solid $granite-canyon;
+                      color: $alpine-goat;
+                  }
+    
+                  & .btn{
+                      
+                      background-color: $canary-diamond;
+                      border-radius: 0;
+                      padding: 20px;
+                      font-family: $ff-sen;
+                      font-size: $fs-18;
+                      font-weight: bold;
+                  }
+              }
+            }
+          }
+    
+          &-communication{
+            &-info{
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-28;
+              color: $granite-canyon;
+            }
+            &-icons{
+            
+            }
+          }
+        }   
+    } 
+}

@@ -1,0 +1,257 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap";
+.finsweet-project-page-blog__navbar {
+  background-color: #232536;
+  height: 80px;
+}
+.finsweet-project-page-blog__navbar-brand {
+  padding-left: 83px;
+}
+.finsweet-project-page-blog__navbar-collapse {
+  padding-right: 32px;
+}
+.finsweet-project-page-blog__navbar .navbar-click {
+  color: white;
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+.finsweet-project-page-blog__navbar .navbar-click:hover {
+  color: #ffcc00;
+}
+.finsweet-project-page-blog__navbar-Subscribe {
+  padding-top: 12px;
+  padding-right: 80px;
+}
+.finsweet-project-page-blog__navbar-Subscribe .navbar-click {
+  color: black;
+  background-color: white;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  width: 179px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.finsweet-project-page-blog-featured {
+  margin-top: 80px;
+  background-color: #f4f0f8;
+}
+.finsweet-project-page-blog-featured-building-left {
+  padding-block: 94px;
+}
+.finsweet-project-page-blog-featured-building-left-header {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 32px;
+}
+.finsweet-project-page-blog-featured-building-left-text {
+  font-family: "Sen", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+  padding-left: 32px;
+}
+.finsweet-project-page-blog-featured-building-left-author {
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 32px;
+}
+.finsweet-project-page-blog-featured-building-left-author-name {
+  color: #592ea9;
+}
+.finsweet-project-page-blog-featured-building-left-description {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 32px;
+}
+.finsweet-project-page-blog-featured-building-left-wrapper {
+  padding-left: 32px;
+}
+.finsweet-project-page-blog-featured-building-left-wrapper-button {
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0;
+  height: 56px;
+  width: 204px;
+  padding-inline: 32px;
+}
+.finsweet-project-page-blog-featured-building-right {
+  padding-block: 80px;
+}
+.finsweet-project-page-blog-posts {
+  padding-top: 64px;
+}
+.finsweet-project-page-blog-posts-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+.finsweet-project-page-blog-posts-left-pictures {
+  padding-block: 32px;
+}
+.finsweet-project-page-blog-posts-right-frame {
+  padding-block: 87px;
+}
+.finsweet-project-page-blog-posts-right-frame-header {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #592ea9;
+}
+.finsweet-project-page-blog-posts-right-frame-text {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-blog-posts-right-frame-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-blog-posts-click {
+  padding-top: 32px;
+}
+.finsweet-project-page-blog-posts-click-prev {
+  font-family: "Sen", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6d6e76;
+}
+.finsweet-project-page-blog-posts-click-prev-text {
+  padding-top: 5px;
+}
+.finsweet-project-page-blog-posts-click-next {
+  font-size: "Sen", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.finsweet-project-page-blog-catagory {
+  padding-top: 128px;
+}
+.finsweet-project-page-blog-catagory-header {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-blog-catagory-block-image {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: 30px;
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-blog-catagory-block-texts-head {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+.finsweet-project-page-blog-catagory-block-texts-subject {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-blog-catagory-startup-texts {
+  padding-inline: 32px;
+}
+.finsweet-project-page-blog-catagory-startup-texts-head {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+.finsweet-project-page-blog-catagory-startup-texts-subject {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-blog-catagory-startup-images {
+  width: 48px;
+  height: 48px;
+  margin-top: 32px;
+  margin-left: 30px;
+  background-color: #fbf6ea;
+}
+.finsweet-project-page-blog-catagory-startup-images-two {
+  padding: 13px;
+}
+.finsweet-project-page-blog-join {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  align-items: center;
+}
+.finsweet-project-page-blog-join-block-head {
+  font-family: "Sen", sans-serif;
+  color: #232536;
+  font-size: 36px;
+  line-height: 48px;
+}
+.finsweet-project-page-blog-join-block-text {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.finsweet-project-page-blog-join-block-button {
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.finsweet-project-page-blog-footer {
+  background-color: #232536;
+}
+.finsweet-project-page-blog-footer-below-link {
+  margin-bottom: 55px;
+}
+.finsweet-project-page-blog-footer-below-link-hamburger {
+  background-color: #ffd050 !important;
+}
+.finsweet-project-page-blog-footer-below-subscribe {
+  margin-bottom: 48px;
+  background-color: #4c4c4c;
+  padding: 80px;
+}
+.finsweet-project-page-blog-footer-below-subscribe-left-text {
+  font-family: "Sen", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  padding-left: 64px;
+}
+.finsweet-project-page-blog-footer-below-subscribe-right-form .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  color: #232536;
+  border: 1px solid #6d6e76;
+  color: #f4f0f8;
+}
+.finsweet-project-page-blog-footer-below-subscribe-right-form .btn {
+  background-color: #ffd050;
+  border-radius: 0;
+  padding: 20px;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.finsweet-project-page-blog-footer-below-communication-info {
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}/*# sourceMappingURL=blog.css.map */

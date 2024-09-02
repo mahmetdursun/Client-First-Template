@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="blog.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="finsweet-project-page-blog">
+      <nav
+        class="finsweet-project-page-blog__navbar navbar navbar-expand-lg fixed-top"
+      >
+        <a
+          class="finsweet-project-page-blog__navbar-brand navbar-brand text-decoration-none"
+          href="/Navbar/Pages/Home/home.html"
+        >
+          <img src="/Navbar/İmages/Logo.png" alt="resme alternatif yazı" />
+        </a>
+
+        <button
+          class="navbar-toggler bg-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="finsweet-project-page-blog__navbar-toggler navbar-toggler-icon"
+          ></span>
+        </button>
+
+        <div
+          class="finsweet-project-page-blog__navbar-collapse collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="finsweet-project-page-blog__navbar-nav navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="navbar-click nav-link text-decoration-none"
+                href="/Navbar/Pages/Home/home.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="navbar-click nav-link text-decoration-none" href="#"
+                >Blog</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="navbar-click nav-link text-decoration-none" href="#"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="navbar-click nav-link text-decoration-none" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="finsweet-project-page-blog__navbar-Subscribe">
+            <ul class="Subscribe-link">
+              <li>
+                <a class="navbar-click nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="finsweet-project-page-blog-featured d-flex">
+        <div class="finsweet-project-page-blog-featured-building container">
+          <div class="row">
+            <div
+              class="finsweet-project-page-blog-featured-building-left col-md-7"
+            >
+              <div
+                class="finsweet-project-page-blog-featured-building-left-header"
+              >
+                <p>FEATURED POST</p>
+              </div>
+
+              <div
+                class="finsweet-project-page-blog-featured-building-left-text"
+              >
+                <p>
+                  Step-by-step guide to choosing great <br />
+                  font pairs
+                </p>
+              </div>
+
+              <div
+                class="finsweet-project-page-blog-featured-building-left-author"
+              >
+                <p>
+                  By
+                  <span
+                    class="finsweet-project-page-blog-featured-building-left-author-name"
+                    >John Doe</span
+                  >
+                  | May 23, 2022
+                </p>
+              </div>
+
+              <div
+                class="finsweet-project-page-blog-featured-building-left-description"
+              >
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+
+              <div
+                class="finsweet-project-page-blog-featured-building-left-wrapper"
+              >
+                <button
+                  class="finsweet-project-page-blog-featured-building-left-wrapper-button btn btn-warning text-capitalize"
+                >
+                  read more >
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-featured-building-right col-md-5"
+            >
+              <div
+                class="finsweet-project-page-blog-featured-building-right-image"
+              >
+                <img src="/Navbar/İmages/featured-post-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="finsweet-project-page-blog-posts container">
+        <div class="row">
+          <div class="finsweet-project-page-blog-posts-header">
+            <p>All posts</p>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-left col-md-6">
+            <div class="finsweet-project-page-blog-posts-left-pictures">
+              <img src="/Navbar/İmages/blog-post-picture-one.png" alt="" />
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-right col-md-6">
+            <div class="finsweet-project-page-blog-posts-right-frame">
+              <div class="finsweet-project-page-blog-posts-right-frame-header">
+                <p>STARTUP</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-text">
+                <p>Design tips for designers that cover everything you need</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-info">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-left col-md-6">
+            <div class="finsweet-project-page-blog-posts-left-pictures">
+              <img src="/Navbar/İmages/blog-post-picture-two.png" alt="" />
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-right col-md-6">
+            <div class="finsweet-project-page-blog-posts-right-frame">
+              <div class="finsweet-project-page-blog-posts-right-frame-header">
+                <p>BUSINESS</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-text">
+                <p>How to build rapport with your web design clients</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-info">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-left col-md-6">
+            <div class="finsweet-project-page-blog-posts-left-pictures">
+              <img src="/Navbar/İmages/blog-post-picture-three.png" alt="" />
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-right col-md-6">
+            <div class="finsweet-project-page-blog-posts-right-frame">
+              <div class="finsweet-project-page-blog-posts-right-frame-header">
+                <p>STARTUP</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-text">
+                <p>Logo design trends to avoid in 2022</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-info">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-left col-md-6">
+            <div class="finsweet-project-page-blog-posts-left-pictures">
+              <img src="/Navbar/İmages/blog-post-picture-four.png" alt="" />
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-right col-md-6">
+            <div class="finsweet-project-page-blog-posts-right-frame">
+              <div class="finsweet-project-page-blog-posts-right-frame-header">
+                <p>TECHNOLOGY</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-text">
+                <p>8 Figma design systems you can download for free today</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-info">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-left col-md-6">
+            <div class="finsweet-project-page-blog-posts-left-pictures">
+              <img src="/Navbar/İmages/blog-post-picture-five.png" alt="" />
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-right col-md-6">
+            <div class="finsweet-project-page-blog-posts-right-frame">
+              <div class="finsweet-project-page-blog-posts-right-frame-header">
+                <p>ECONOMY</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-text">
+                <p>Font sizes in UI design: The complete guide to follow</p>
+              </div>
+
+              <div class="finsweet-project-page-blog-posts-right-frame-info">
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat <br />
+                  nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="finsweet-project-page-blog-posts-click d-flex justify-content-center">
+            <div class="finsweet-project-page-blog-posts-click-prev p-2">
+              <p class="finsweet-project-page-blog-posts-click-prev-text">&lt;Prev</p>
+            </div>
+            <div class="finsweet-project-page-blog-posts-click-next p-2">
+              <p class="finsweet-project-page-blog-posts-click-next-text">Next></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="finsweet-project-page-blog-catagory container">
+        <div class="row">
+          <div class="finsweet-project-page-blog-catagory-header">
+            <p>All Categories</p>
+          </div>
+
+          <div
+            class="finsweet-project-page-blog-catagory-block card mx-auto mt-4"
+            style="width: 18rem"
+          >
+            <div class="finsweet-project-page-blog-catagory-block-image">
+              <img src="/Navbar/İmages/business-icon.png" alt="..." />
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-catagory-block-texts card-body"
+            >
+              <p class="finsweet-project-page-blog-catagory-block-texts-head">
+                Businees
+              </p>
+              <p
+                class="finsweet-project-page-blog-catagory-block-texts-subject card-text"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="finsweet-project-page-blog-catagory-startup bg-warning card mx-auto mt-4"
+            style="width: 18rem"
+          >
+            <div class="finsweet-project-page-blog-catagory-startup-images">
+              <img
+                src="/Navbar/İmages/startup-icon.png"
+                class="finsweet-project-page-blog-catagory-startup-images-two"
+                alt="..."
+              />
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-catagory-startup-texts card-body"
+            >
+              <p class="finsweet-project-page-blog-catagory-startup-texts-head">
+                Startup
+              </p>
+              <p
+                class="finsweet-project-page-blog-catagory-startup-texts-subject card-text"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="finsweet-project-page-blog-catagory-block card mx-auto mt-4"
+            style="width: 18rem"
+          >
+            <div class="finsweet-project-page-blog-catagory-block-image">
+              <img src="/Navbar/İmages/economy-icon.png" alt="..." />
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-catagory-block-texts card-body"
+            >
+              <p class="finsweet-project-page-blog-catagory-block-texts-head">
+                Economy
+              </p>
+              <p
+                class="finsweet-project-page-blog-catagory-block-texts-subject card-text"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="finsweet-project-page-blog-catagory-block card mx-auto mt-4"
+            style="width: 18rem"
+          >
+            <div class="finsweet-project-page-blog-catagory-block-image">
+              <img src="/Navbar/İmages/technology-icon.png" alt="..." />
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-catagory-block-texts card-body"
+            >
+              <p class="finsweet-project-page-blog-catagory-block-texts-head">
+                Technology
+              </p>
+              <p
+                class="finsweet-project-page-blog-catagory-block-texts-subject card-text"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="finsweet-project-page-blog-join container">
+        <div class="row justify-content-center">
+          <div
+            class="finsweet-project-page-blog-join-block col-md-5 text-center"
+          >
+            <p class="finsweet-project-page-blog-join-block-head">
+              Join our team to be a part <br />
+              of our story
+            </p>
+
+            <p class="finsweet-project-page-blog-join-block-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+              elit, sed do eiusmod tempor incididunt.
+            </p>
+
+            <button
+              class="finsweet-project-page-blog-join-block-button btn btn-warning"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="finsweet-project-page-blog-footer text-light py-5">
+        <div class="finsweet-project-page-blog-footer-below container">
+          <div class="row">
+            <div
+              class="finsweet-project-page-blog-footer-below-link d-flex justify-content-between p-0"
+            >
+              <a
+                class="finsweet-project-page-blog-footer-below-link-logo navbar-brand text-decoration-none"
+                href="/Navbar/Pages/Home/home.html"
+              >
+                <img
+                  src="/Navbar/İmages/Logo.png"
+                  alt="resme alternatif yazı"
+                />
+              </a>
+
+              <button
+                class="finsweet-project-page-blog-footer-below-link-hamburger navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#footerNav"
+                aria-controls="footerNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse d-lg-flex justify-content-end"
+                id="footerNav"
+              >
+                <ul
+                  class="finsweet-project-page-blog-footer-below-link-nav-select nav"
+                >
+                  <li class="nav-item">
+                    <a
+                      href="/Navbar/Pages/Home/home.html"
+                      class="nav-link text-light"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="/Navbar/Pages/Blog/blog.html"
+                      class="nav-link text-light"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-light">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-light">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-light">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-footer-below-subscribe container"
+            >
+              <div class="row align-items-center">
+                <div
+                  class="finsweet-project-page-blog-footer-below-subscribe-left col-md-12 col-sm-12 col-lg-7"
+                >
+                  <p
+                    class="finsweet-project-page-blog-footer-below-subscribe-left-text"
+                  >
+                    Subscribe to our newsletter to get <br />
+                    latest updates and news
+                  </p>
+                </div>
+                <div
+                  class="finsweet-project-page-blog-footer-below-subscribe-right col-md-10 col-lg-5 col-xl-5"
+                >
+                  <form
+                    class="finsweet-project-page-blog-footer-below-subscribe-right-form d-flex col-xl-11"
+                  >
+                    <input
+                      type="email"
+                      class="finsweet-project-page-blog-footer-below-subscribe-right-form-mail form-control me-2"
+                      placeholder="Enter Your Email"
+                    />
+                    <button
+                      class="finsweet-project-page-blog-footer-below-subscribe-right-form-button btn text-capitalize col-md-5"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="finsweet-project-page-blog-footer-below-communication container"
+            >
+              <div class="row">
+                <div
+                  class="finsweet-project-page-blog-footer-below-communication-info col-md-10"
+                >
+                  <p>Finstreet 118 2561 Fintown</p>
+                  <p>Hello@finsweet.com 020 7993 2905</p>
+                </div>
+
+                <div
+                  class="finsweet-project-page-blog-footer-below-communication-icons col-md-2"
+                >
+                  <img
+                    src="/Navbar/İmages/facebook-icon-grey.png"
+                    alt=""
+                    class="finsweet-project-page-blog-footer-below-communication-icons-logo"
+                  />
+                  <img
+                    src="/Navbar/İmages/x-icon-grey.png"
+                    alt=""
+                    class="finsweet-project-page-blog-footer-below-communication-icons-logo"
+                  />
+                  <img
+                    src="/Navbar/İmages/instagram-icon-grey.png"
+                    alt=""
+                    class="finsweet-project-page-blog-footer-below-communication-icons-logo"
+                  />
+                  <img
+                    src="/Navbar/İmages/linkedin-icon-grey.png"
+                    alt=""
+                    class="finsweet-project-page-blog-footer-below-communication-icons-logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
