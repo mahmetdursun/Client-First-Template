@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/finsweet/page/common/index.css" />
+</head>
+<body>
+    <div class="finsweet-project">
+      <div class="finsweet-project-post">
+        <nav class="finsweet-project__navbar navbar navbar-expand-lg fixed-top p-0">
+          <div class="finsweet-project__navbar-logo">
+            <a class="finsweet-project__navbar-logo-brand navbar-brand" href="/finsweet/page/home/index.html">
+              <img src="/finsweet/images/logo.png" alt="resme alternatif yazı" />
+            </a>
+          </div>
+        
+          <div class="finsweet-project__navbar-dark">
+            <button class="navbar-toggler bg-warning" type="button" id="menuToggle">
+              <span class="finsweet-project__navbar-dark-click fa-solid fa-bars"></span>
+            </button>
+          </div>
+        
+          <div class="finsweet-project__navbar-collapse collapse navbar-collapse" id="navbarNav">
+            <ul class="finsweet-project__navbar-collapse-nav navbar-nav ms-auto text-decoration-none">
+              <li class="nav-item">
+                <a class="finsweet-project__navbar-collapse-nav-click nav-link" href="/finsweet/page/home/index.html">Home</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="finsweet-project__navbar-collapse-nav-click nav-link" href="/finsweet/page/blog/blog.html">Blog</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="finsweet-project__navbar-collapse-nav-click nav-link" href="/finsweet/page/about-Us/about-us.html">About Us</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="finsweet-project__navbar-collapse-nav-click nav-link" href="/finsweet/page/about/about.html">Contact Us</a>
+              </li>
+            </ul>
+        
+            <div class="finsweet-project__navbar-subscribe">
+              <ul class="nav-item p-0">
+                <li class="finsweet-project__navbar-subscribe-list">
+                  <a class="finsweet-project__navbar-subscribe-list-click navbar-click nav-link" href="#">Subscribe</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="finsweet-project__navbar-mode">
+              <ul class="nav-item p-0">
+                <li class="finsweet-project__navbar-mode-list">
+                  <button class="btn btn-light" id="darkModeToggle">
+                    <i class="fas fa-sun"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+        <div class="finsweet-project-post__blog">
+            <div class="finsweet-project-post__blog-hero">
+              <div class="finsweet-project-post__blog-hero-picture ">
+                <img src="/finsweet/images/jonathan-picture.png" alt="Jonathan Vallem" class="rounded-circle"/>
+              </div>
+    
+              <div class="finsweet-project-post__blog-hero-info m-0">
+                <p class="finsweet-project-post__blog-hero-info-text m-0">
+                  Andrew Jonson
+                </p>
+    
+                <p class="finsweet-project-post__blog-hero-info-date m-0">
+                  Posted on 27th January 2022
+                </p>
+              </div>
+            </div>
+  
+            <div class="finsweet-project-post__blog-text">
+              <p>Step-by-step guide to choosing <br> great font pairs</p>
+            </div>
+  
+            <div class="finsweet-project-post__blog-logo">
+              <img src="/finsweet/images/startup-icon.png" class="finsweet-project-post-post__blog-logo-image" alt="startup-icon"/>
+  
+              <p class="finsweet-project-post__blog-logo-text">Startup</p>
+            </div>
+        </div>
+  
+        <div class="finsweet-project-post__picture container carousel slide"  id="carouselExampleIndicators" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+  
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/finsweet/images/blog-post-women-picture.png" class="d-block w-100" alt="women-picture">
+              </div>
+  
+              <div class="carousel-item">
+                <img src="/finsweet/images/home-page.jpg" class="d-block w-100" alt="home-page">
+              </div>
+            </div>
+  
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  
+              <span class="visually-hidden">Previous</span>
+            </button>
+  
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+  
+        <div class="finsweet-project-post__article container">
+            <div class="row">
+            <p class="finsweet-project-post__article-header">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod.</p>
+  
+            <p class="finsweet-project-post__article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra <br> adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae <br> ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+  
+            <p class="finsweet-project-post__article-headers">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod.</p>
+  
+            <p class="finsweet-project-post__article-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra <br> adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae <br> ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+  
+            <p class="finsweet-project-post__article-texts mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra <br> adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae <br> ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+  
+            <ul class="finsweet-project-post__article-item mt-3">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Non blandit massa enim nec scelerisque</li>
+              <li>Neque egestas congue quisque egestas</li>
+            </ul>
+  
+            <p class="finsweet-project-post__article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra <br> adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae <br> ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+  
+            <p class="finsweet-project-post__article-header">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod.</p>
+  
+            <p class="finsweet-project-post__article-texts m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra <br> adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae <br> ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+           </div>
+  
+        </div>
+  
+        <div class="finsweet-project-post__information container">
+            <div class="row">
+              <div class="finsweet-project-post__information-header">
+                <p>What to read next</p>
+              </div>
+  
+              <div class="finsweet-project-post__information-chain col-md-4">
+                <div class="finsweet-project-post__information-chain-image">
+                  <img src="/finsweet/images/blog-post-two-women.png" alt="two-women">
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-author">
+                  <p>
+                    By
+                    <span class="finsweet-project-post__information-chain-author-name">John Doe</span>
+                    | Aug 23, 2021 
+                  </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-info">
+                  <p>A UX Case Study Creating a Studious Environment for Students: </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-text">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+              </div>
+  
+              <div class="finsweet-project-post__information-chain col-md-4">
+                <div class="finsweet-project-post__information-chain-image">
+                  <img src="/finsweet/images/blog-post-meeting.png" alt="post-meeting">
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-author">
+                  <p>
+                    By
+                    <span class="finsweet-project-post__information-chain-author-name">John Doe</span>
+                    | Aug 23, 2021 
+                  </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-info">
+                  <p>A UX Case Study Creating a Studious Environment for Students: </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-text">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+              </div>
+  
+              <div class="finsweet-project-post__information-chain col-md-4">
+                <div class="finsweet-project-post__information-chain-image">
+                  <img src="/finsweet/images/blog-post-women-man.png" alt="women-man">
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-author">
+                  <p>
+                    By
+                    <span class="finsweet-project-post__information-chain-author-name">John Doe</span>
+                    | Aug 23, 2021 
+                  </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-info">
+                  <p>A UX Case Study Creating a Studious Environment for Students: </p>
+                </div>
+  
+                <div class="finsweet-project-post__information-chain-text">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate <br> velit esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+              </div>
+
+              <hr class="finsweet-project-post__information-divider">
+            </div>
+        </div>
+  
+        <div class="finsweet-project__join container">
+          <div class="row justify-content-center">
+            <div class="finsweet-project__join-block col-md-5 text-center">
+              <p class="finsweet-project__join-block-head">
+                Join our team to be a part <br />
+                of our story
+              </p>
+  
+              <p class="finsweet-project__join-block-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+                elit, sed do eiusmod tempor incididunt.
+              </p>
+  
+              <button class="finsweet-project__join-block-button btn rounded-0 py-3 px-5">
+               Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <footer class="finsweet-project__footer text-light">
+          <div class="finsweet-project__footer-below container">
+            <div class="row">
+              <div class="finsweet-project__footer-below-link d-flex justify-content-between p-0">
+                <a class="finsweet-project__footer-below-link-logo navbar-brand text-decoration-none" href="/finsweet/page/home/index.html">
+                  <img src="/finsweet/images/logo.png" alt="resme alternatif yazı"/>
+                </a>
+  
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end">
+                  <ul class="finsweet-project__footer-below-link-nav nav">
+                    <li class="nav-item">
+                      <a href="/finsweet/page/home/index.html" class="finsweet-project__footer-below-link-nav-select nav-link text-light p-0">Home</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="/finsweet/page/blog/blog.html" class="finsweet-project__footer-below-link-nav-select nav-link text-light p-0">Blog</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="/finsweet/page/about-Us/about-us.html" class="finsweet-project__footer-below-link-nav-select nav-link text-light p-0">About us</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="/finsweet/page/about/about.html" class="finsweet-project__footer-below-link-nav-select nav-link text-light p-0">Contact us</a>
+                    </li>
+  
+                    <li class="nav-item">
+                      <a href="#" class="finsweet-project__footer-below-link-nav-select nav-link text-light p-0">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="finsweet-project__footer-below-subscribe container">
+                <div class="row align-items-center">
+                  <div class="finsweet-project__footer-below-subscribe-left col-md-12 col-sm-12 col-lg-7">
+                    <p class="finsweet-project__footer-below-subscribe-left-text">
+                      Subscribe to our newsletter to get <br />
+                      latest updates and news
+                    </p>
+                  </div>
+  
+                  <div class="finsweet-project__footerr-below-subscribe-right col-md-10 col-lg-5 col-xl-5 p-0">
+                    <form class="finsweet-project__footer-below-subscribe-right-form d-flex col-xl-12">
+                      <input type="email" class="finsweet-project__footer-below-subscribe-right-form-mail form-control me-4" placeholder="Enter Your Email"/>
+  
+                      <button class="finsweet-project__footer-below-subscribe-right-form-button btn text-capitalize col-md-5  rounded-0 py-3 px-5">
+                        Subscribe
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="finsweet-project__footer-below-communication container ">
+                <div class="row">
+                  <div class="finsweet-project__footer-below-communication-info col-md-10 p-0">
+                    <p class="m-0">Finstreet 118 2561 Fintown</p>
+  
+                    <p class="m-0">Hello@finsweet.com 020 7993 2905</p>
+                  </div>
+  
+                  <div class="finsweet-project__footer-below-communication-icons col-md-2 p-0">
+                    <i class="fa-brands fa-facebook finsweet-project__footer-below-communication-icons-logos"></i>
+                    <i class="fa-brands fa-twitter finsweet-project__footer-below-communication-icons-logo"></i>
+                    <i class="fa-brands fa-instagram finsweet-project__footer-below-communication-icons-logo"></i>
+                    <i class="fa-brands fa-linkedin finsweet-project__footer-below-communication-icons-logo"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  
+        <div class="finsweet-project-post__top">
+          <a onclick="topFunction()" id="myBtn" title="Go to top" class="fa-sharp fa-solid fa-up-long text-decoration-none"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="/finsweet/page/common/common.js" defer></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous">
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous">
+    </script>
+</body>
+</html>

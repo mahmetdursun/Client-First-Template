@@ -1,0 +1,336 @@
+1. Block element modifier uygun şekilde class isimleri
+2. Scss kullanımı
+3. Pixel perfect tasarım
+4. Github kullanımı
+5. Proje responsive olmalıdır.
+6. Kod anlaşılır ve okunabilir olmalıdır. Kod editöründe formatter kullanılabilir.
+7. Site scroll edildiği zaman header yukarda sabit olmalı, kaybolmamalıdır.
+8. Site aşağı scroll edildiği zaman sağ altta bir buton belirmeli ve tıklandığında mevcut sayfanın başına çıkmalıdır.
+9. Git commitlerinin anlamlı olması.
+10. Projede düzenli bir dosya yapısı kullanmalı.
+11. Boostrap kullanılmalı
+12. Mobil menü kodlanırken kullanılan kütüphanenin mobil menüsü kullanılmamalı, mobil menü özel kodlanmalı. Mobil menü butonuna tıklandığı zaman 
+menü açılmalı ve kapatma butonu ile de kapatılmalıdır.
+12. Blog Post sayfasında büyük görsel slider olmalıdır ve ikonlar ile kontrol edilmelidir. Sliderda autoplay özelliği olmalıdır.
+13. Karanlık mod seçeneği eklenmelidir. Karanlık moda geçildiği zaman sitenin arkaplanı daha koyu bir renk olmalıdır.
+14. Projede ikonların Font Awesome üzerinden kullanılması tavsiye edilir. İkonun birebir aynısı yoksa benzer ikon kullanılabilir.
+
+
+//transparan
+
+
+// /* Light mode stilleri (varsayılan) */
+// html[data-bs-theme="light"] {
+//   background-color: white;
+//   color: black;
+// }
+
+// html[data-bs-theme="light"] .navbar {
+//   background-color: #e3f2fd;
+// }
+
+// html[data-bs-theme="light"] .card {
+//   background-color: white;
+//   color: black;
+// }
+
+// .content-section {
+//   padding: 4rem 0rem;
+// }
+
+
+
+
+// html[data-bs-theme="dark"] {
+//   background-color: $dark-tone-ink;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__navbar {
+//   background-color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__navbar-collapse-nav-click {
+//   color: $black;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__navbar-subscribe-list-click {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__navbar-collapse {
+//   background-color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__container-left-structure-author-name {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__container-right-info {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__container-right-group-part-one {
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__hero-text-wrapper-button {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+
+// html[data-bs-theme="dark"] .finsweet-project-home__container-left-structure-info-wrapper-button {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block {
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-left-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-left-info {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-left-link-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-right-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-right-info {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__abouts-block-right-link-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__catagory-block {
+//   background-color: $dynamic-black;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__catagory-startup {
+//   background-color: $dynamic-black;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__started-structure  {
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__started-structure-button-click {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__list-block{
+//   background-color: $dynamic-black !important;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon !important;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__list-block-texts-subject {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__plural {
+//   background-color: $black;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__plural-left-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__plural-left-info {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__plural-right-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__plural-right-info-text-location {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__join-block-head {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__join-block-text {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__join-block-button {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__footer  {
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__footer-below-subscribe  {
+//   background-color: $chromaphobic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project__footer-below-subscribe-right-form-button {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] #myBtn {
+//   background-color: $white;
+//   color: $granite-canyon;
+
+//   &:hover {
+//     background-color: $carbon;
+//     color: $white;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__featured {
+//   background-color: $washed-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__featured-building-left-author-name {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__featured-building-left-wrapper-button {
+//   background-color: $black;
+//   color: $white;
+
+//   &:hover {
+//     background-color: $carbon;
+//   }
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__posts-right-frame-header {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__posts-right-frame-info {
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-blog__posts-click-prev-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__blog-hero-info-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__blog-hero-info-date{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__article-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__article-texts{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__information-chain-author-name{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-post__information-chain-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__regarding-overlay-block-left{
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__regarding-overlay-block-right-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__regarding-text{
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__building {
+//   background-color: $dynamic-black;
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__building-left-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__building-right-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__creatives-blog-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-about__started-blog-text{
+//   color: $white;
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__logos-block-picture-left img {
+//   filter: invert(1) brightness(2);
+// }
+
+// html[data-bs-theme="dark"] .finsweet-project-home__logos-block-picture-right img {
+//   filter: invert(1) brightness(2);
+// }

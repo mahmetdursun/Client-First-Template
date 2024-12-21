@@ -1,0 +1,1696 @@
+@import "https://fonts.googleapis.com/css2?family=Sen:wght@400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap";
+
+// Değişkenler
+$black: black;
+$black-50: #00000011;
+$black-66: #00000066;
+$black-99: #00000099;
+$white: white;
+$color-dark-grey: #343a40;
+$usc-gold: #ffcc00;
+$canary-diamond: #ffd050;
+$clear-moon: #fbf6ea;
+$royalty: #592ea9;
+$cold-steel: #232536;
+$alpine-goat: #f4f0f8;
+$granite-canyon: #6d6e76;
+$elemental-grey: #a0a0a0;
+$shady-character: #4c4c4c;
+$squant: #666666;
+$chromaphobic-black: #292929;
+$fortress-grey: #b8b8b8;
+$carbon: #333333;
+$atlantic-charter: #2e3040;
+$dark-tone-ink: #121212;
+$dynamic-black: #1e1e1e;
+$washed-black: #212529;
+
+$ff-sen: "Sen", sans-serif;
+$ff-inter: "Inter", sans-serif;
+
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-36: 36px;
+$fs-48: 48px;
+$fs-56: 56px;
+
+$lh-20: 20px;
+$lh-28: 28px;
+$lh-32: 32px;
+$lh-36: 36px;
+$lh-40: 40px;
+$lh-48: 48px;
+$lh-64: 64px;
+
+.finsweet-project {
+
+  // Navbar
+  &__navbar {
+    background-color: $cold-steel;
+
+    &-logo{
+      padding: 0 0 0 83px;
+
+      &-brand {
+        padding: 10px 10px 15px 10px;
+      }
+    }
+
+    &-dark{
+      padding: 20px 30px 20px 30px;
+    }
+
+    &-collapse {
+      display: none;
+
+      &.active {
+        display: flex; 
+        position: absolute; 
+        right: 0;
+        top: 70px; 
+        background-color: $cold-steel;
+        text-align: center; 
+      }
+
+      &-nav {
+        &-click {
+          color: $white;
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+
+          &:hover {
+            color: $usc-gold;
+          }
+        }
+      }
+    }
+
+    &-subscribe {
+      padding: 12px 32px 0px 20px;
+    
+      &-list{
+        list-style-type: none;
+
+        &-click {
+          color: $black;
+          background-color: $white;
+          font-family: $ff-sen;
+          font-size: $fs-18;
+          padding: 16px 48px;
+        }
+      }
+    }
+
+    &-mode{
+      list-style-type: none;
+      margin: 0;
+      padding: 15px 30px 0 0px;
+
+      &-list{
+        list-style-type: none;
+      }
+    }
+  }
+
+  // Choose a catagory
+  &__catagory {
+    padding-top: 128px;
+
+    &-header {
+      text-align: center;
+      font-family: $ff-sen;
+      font-weight: bold;
+      font-size: $fs-36;
+      line-height: $lh-48;
+      padding-bottom: 32px;
+    }
+
+    &-headers {
+      margin: 0 0 32px 0;
+      padding: 0;
+      font-family: $ff-sen;
+      font-weight: bold;
+      font-size: $fs-36;
+      line-height: $lh-48;
+    }
+
+    &-block{  
+      max-width: 295px;
+      margin-right: 32px;
+
+      &:hover {
+        background-color: $canary-diamond;
+      } 
+
+      &-image{
+        max-width: 48px;
+        height: 48px;
+        margin: 32px 0 0 30px;
+        border-radius: 10px;
+        background-color: $clear-moon;
+      }
+      
+      &-texts{
+        padding: 16px 32px 32px 32px;
+
+        &-head{
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          margin: 0;
+          padding: 0 0 4px 0;
+        }
+
+        &-subject{
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+    }
+   
+    &-startup{
+      max-width: 305px;
+      margin-right: 32px;
+
+      &:hover {
+        background-color: $canary-diamond;
+      } 
+
+      &-texts{
+        padding: 16px 32px 32px 32px;
+
+        &-head{
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          margin: 0;
+          padding: 0 0 4px 0;
+        }
+
+        &-subject{
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+
+      &-images{
+        max-width: 48px;
+        height: 48px;
+        margin: 32px 0 0 30px;
+        border-radius: 10px;
+        background-color: $clear-moon;
+
+        &-two{
+          padding: 13px;  
+        }
+      }
+    }
+   }
+
+   // List of Authors
+   &__list {
+    padding-top: 128px;
+    
+    &-header {
+      font-family: $ff-sen;
+      font-weight: bold;
+      font-size: $fs-36;
+      line-height: $lh-48;
+      padding-bottom: 8px;
+    }
+
+    &-block{
+      max-width: 296px;
+      margin-right: 32px;
+      
+      &:hover {
+        background-color: $clear-moon !important;
+      }
+
+      &-image{
+        padding-top: 40px;
+        max-width: 100%;
+      }
+
+      &-texts{
+        padding: 20px 0 40px 0;
+
+        &-head{
+          margin: 0;
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-28;
+          line-height: $lh-36;
+        }
+
+        &-subject{
+          margin: 0;
+          padding-bottom: 20px;
+          font-family: $ff-sen;
+          font-size: $fs-14;
+          line-height: $lh-20;
+          color: $granite-canyon;
+        }
+
+        &-icons{
+          &-logo{
+            padding-inline: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  // Join button
+  &__join{
+    padding-block: 128px;
+    align-items: center;
+
+    &-block{
+      &-head{
+        font-family: $ff-sen;
+        color: $cold-steel;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+      }
+
+      &-text{
+        margin: 0 0 32px 0;
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+
+      &-button{
+        align-items: center;
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-18;
+        background-color: $canary-diamond;
+
+        &:hover{
+          background-color: $usc-gold;
+        }
+      }
+      
+    }
+   }
+
+  // Footer
+  &__footer{
+        padding: 59px 0 0 0;
+        background-color: $cold-steel;
+    
+        &-below {
+          &-link {
+            margin-bottom: 55px;
+      
+            &-nav{
+              &-select{
+                padding: 0 0 0 24px !important;
+              }
+            }
+          }
+    
+          &-subscribe{
+            background-color: $atlantic-charter;
+            padding: 80px 64px 80px 64px;
+    
+            &-left{
+              &-text{
+                font-family: $ff-sen;
+                font-size: $fs-36;
+                line-height: $lh-48;
+                margin: 0;
+              }
+            }
+    
+            &-right {
+              &-form {
+                &-mail {
+                  border-radius: 0;
+                  background-color: transparent;
+                  border: 1px solid $shady-character;
+            
+                  &::placeholder {
+                    color: $granite-canyon;  
+                  }
+                }
+
+                &-button{
+                  background-color: $canary-diamond;       
+                  font-family: $ff-sen;
+                  font-size: $fs-18;
+                  font-weight: bold;
+                  
+                  &:hover{
+                    background-color: $usc-gold;
+                  }
+                }
+              }
+            }
+            
+          }
+    
+          &-communication{
+            padding: 48px 0 56px 10px;
+            
+            &-info{
+              margin: 0;
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-28;
+              color: $granite-canyon;
+            }  
+    
+            &-icons{
+              &-logo{
+                padding: 12px 0 0 26.67px;
+                color: $granite-canyon;
+              }
+
+              &-logos{
+                padding: 12px 0 0 55px;
+                color: $granite-canyon;
+              }
+            }
+          }
+        }   
+  } 
+
+  #myBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1; 
+    background-color: $canary-diamond; 
+    color: $white; 
+    padding: 22px 25px 25px 25px; 
+    border-radius: 100%; 
+  }
+  
+  #myBtn:hover {
+    background-color: $usc-gold;
+  }
+
+  &-home{
+  // Hero image
+  &__hero {
+    padding-top: 87px;
+    background: linear-gradient(
+        $black-66, 
+        $black-66
+    ), url("/finsweet/images/home-page.jpg");
+    background-size: cover;
+    min-height: 720px;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, $black-99, transparent 60%);
+    }
+
+    &-text {
+      position: absolute;
+      padding: 128px 0 192px 80px;
+      color: $white;
+      text-align: left;
+      font-family: $ff-sen; 
+
+      &-tag {
+        &-name {
+          font-family: $ff-inter;
+          font-size: $fs-16;
+        }
+
+        &-span {
+          font-family: $ff-inter;
+          font-weight: bold;
+        }
+      }
+
+      &-title {
+        font-family: $ff-sen;
+        font-size: $fs-56;
+        line-height: $lh-64;
+        padding-top: 8px;
+        font-weight: bold;
+      }
+
+      &-author {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        padding-top: 8px;
+
+        &-name {
+          color: $canary-diamond;
+        }
+      }
+
+      &-description {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+      }
+
+      &-wrapper {
+        padding-top: 32px;
+
+        &-button {
+          font-family: $ff-sen;
+          font-size: $fs-18;
+          font-weight: bold;
+          background-color: $canary-diamond;
+
+          &:hover{
+            background-color: $usc-gold;
+          }
+        }
+      }
+    }
+  }
+
+  // Container
+  &__container {
+    padding-top: 128px; 
+    padding-bottom: 128px;
+  
+    &-left {
+      &-header {
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        padding: 0 0 16px 0;
+      }
+
+      &-structure {
+        padding-bottom: 32px;
+        box-sizing: border-box;
+        border: 0.1px solid $black-50;
+
+        &-image {
+          padding: 32px;
+        }
+
+        &-author {
+          font-family: $ff-sen;
+          font-size: $fs-14;
+          line-height: $lh-20;
+          padding-left: 32px;
+
+          &-name {
+            color: $royalty;
+          }
+        }
+
+        &-info{
+          &-title {
+            font-family: $ff-sen;
+            font-weight: bold;
+            font-size: $fs-28;
+            line-height: $lh-36;
+            padding-left: 32px;
+          }
+  
+          &-description {
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+            padding: 0 0 16px 32px;
+          }
+
+          &-wrapper {
+            padding-left: 32px;
+
+            &-button {
+              font-family: $ff-sen;
+              font-size: $fs-18;
+              font-weight: bold;
+              background-color: $canary-diamond;
+
+              &:hover{
+                background-color: $usc-gold;
+              }
+            }
+          }
+        } 
+      }
+    }
+
+    &-right {
+      padding: 0 0 0 8px;
+
+      &-header {
+        padding: 0 0 16px 8px;
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+
+      &-info {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $royalty;
+        margin: 0 15px 41px 0;
+      }
+
+      &-group {
+        &-part{
+          &-one {
+            padding: 32px 0 25px 0;
+    
+            &-name {
+              margin: 0;
+              padding: 0 0 8px 32px;
+              font-family: $ff-sen;
+              font-size: $fs-14;
+              line-height: $lh-20;
+            }
+            
+            &-info {
+              font-family: $ff-sen;
+              font-weight: bold;
+              font-size: $fs-24;
+              line-height: $lh-32;
+              padding-left: 32px;
+              margin: 0;
+            }
+          }
+  
+          &-one {   
+            &:hover {
+              background-color: $clear-moon;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Abouts
+  &__abouts {
+    display: flex;
+    padding-top: 23px;
+
+    &-block {
+      background-color: $alpine-goat;
+      position: relative;
+      
+      &::before{
+        content: "";
+        position: absolute;
+        top: -23px;
+        transform: translateX(-58%);
+        left: 66%;
+        width: 81%;
+        height: 23px;
+        background: linear-gradient(to right, $canary-diamond 73%, $royalty 27%);
+      }
+
+      html[data-bs-theme="dark"] &::before {
+        background: linear-gradient(to right, $white 73%, $color-dark-grey 27%);
+      }
+
+      & .row-content{
+        padding: 96px 80px;
+      }
+  
+      &-left {
+        padding: 0;
+        
+        &-header {
+          font-size: $fs-16;
+          line-height: $lh-20;
+          padding: 0 0 8px 0;
+        }
+  
+        &-text {
+          font-family: $ff-sen;
+          color: $cold-steel;
+          font-size: $fs-36;
+          line-height: $lh-48;
+          font-weight: bold;
+        }
+  
+        &-info { 
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+  
+        &-link {  
+          font-family: $ff-sen;
+          font-weight: bold;
+          font-size: $fs-18;
+  
+          &-text {
+            color: $royalty;
+          }
+        }
+      }
+  
+      &-right {   
+        padding: 0 0 0 61px;
+
+        &-header {
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-20;
+          
+        }
+  
+        &-text { 
+          font-family: $ff-sen;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          color: $cold-steel;
+          font-weight: bold;
+        }
+  
+        &-info {
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+    }
+  }
+
+  // WHY WE STARTED
+  &__started {
+    padding-top: 128px;
+    position: relative;
+
+    &-structure {  
+      position: absolute;
+      max-width: 706px;
+      bottom: 0;
+      right: 30px;
+      background-color: $white;
+      padding: 80px 0 80px 80px;
+  
+      &-header {
+        font-size: $fs-16;
+        line-height: $lh-20;
+        padding-bottom: 8px;
+      }
+  
+      &-info {
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-48;
+        line-height: $lh-64;
+      }
+  
+      &-text {
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        padding-bottom: 16px;
+      }
+  
+      &-button {
+        &-click {
+          font-family: $ff-sen;
+          font-size: $fs-18;
+          font-weight: bold; 
+          background-color: $canary-diamond;
+
+          &:hover{
+            background-color: $usc-gold;
+          }
+        }
+      }
+    }
+  }
+
+  // Logos
+  &__logos{
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    &-block{
+      &-picture{
+        margin: 0;
+
+        &-right{
+          margin: 0;
+          padding-top: 12px;
+        }
+      }
+    }
+  }
+
+  // TESTIMONIALS
+  &__plural {
+    background-color: $clear-moon;
+
+    & .row-content{
+      padding: 92px 111px 0 112px;
+    }
+    
+    &-left {
+      &-header {  
+        font-size: $fs-16;
+        line-height: $lh-20;
+        margin: 0 0 12px 0;
+      }
+
+      &-text {   
+        font-family: $ff-sen;
+        color: $cold-steel;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+      }
+
+      &-info {     
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+    }
+    
+
+    &-right {
+      &::before{
+        content: "";
+        position: absolute;
+        opacity: 0.3;
+        left: 620px;
+        height: 330px;
+        width: 0.2px;
+        background-color: $granite-canyon;
+      }
+
+      &-text {
+        font-family: $ff-sen;
+        font-size: $fs-24;
+        line-height: $lh-32;
+        color: $cold-steel;
+        font-weight: bold;     
+      }
+
+      &-info {
+        padding-top: 121px;
+        padding-bottom: 75px;
+        
+        &-text{
+          margin: 0 0 0 16px;
+          
+          &-name{
+            font-family: $ff-sen;
+            font-size: $fs-24;
+            line-height: $lh-32;
+            font-weight: bold;
+          }
+
+          &-location{
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+            color: $granite-canyon;
+          }
+        }
+
+        &-buttons{
+          padding: 0 0 0 30px;
+
+          &-before{
+            width: 48px;
+            height: 48px;
+          }
+
+          &-after{
+            background-color: $cold-steel;
+            margin-left: 24px;
+            width: 62px;
+            height: 62px;
+            padding: 18px;
+            border-radius: 50%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  }
+
+  &-blog{
+   // FEATURED POST
+   &__featured{
+    padding-top: 80px;
+    background-color: $alpine-goat;
+
+  &-building{
+    &-left{
+        padding: 94px 0 0 0;
+
+        &-header{
+             font-family: $ff-sen;
+             font-size: $fs-16;
+             line-height: $lh-20;  
+             padding: 0 0 4px 0;           
+        }
+
+        &-text{
+             font-family: $ff-sen;
+             font-size: $fs-36;
+             line-height: $lh-48;
+             font-weight: bold;
+        }
+     
+         &-author {
+             font-family: $ff-sen;
+             font-size: $fs-14;
+             line-height: $lh-20;
+     
+             &-name {
+                 color: $royalty;
+             }
+         }
+
+         &-description {
+             font-family: $ff-sen;
+             font-size: $fs-16;
+             line-height: $lh-28;
+             padding: 0 0 16px 0;
+         }
+
+         &-wrapper {
+           &-button {
+             font-family: $ff-sen;
+             font-size: $fs-18;
+             font-weight: bold;
+             background-color: $canary-diamond;
+
+             &:hover{
+              background-color: $usc-gold;
+             }
+           }
+         }
+     }
+
+     &-right{
+        &-picture{
+          padding: 80px 80px 80px 129px;
+        }
+     }
+  }
+   }
+
+   // All posts
+   &__posts{
+  padding-top: 64px;
+
+  &-header{
+    font-family: $ff-sen;
+    font-weight: bold;
+    font-size: $fs-48;
+    line-height: $lh-64;
+    padding: 0 0 32px 0;
+
+    &-divider{
+      margin: 32px 0 0 0;
+    }
+  }
+
+  &-left{
+    padding: 0 0 0 0;
+    max-width: 490px;
+    
+    &-pictures{
+      padding-block: 32px;
+    }
+  }
+
+  &-right{  
+    &-frame{
+      padding-block: 87px;
+      margin-left: 32px;
+
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-20;
+        color: $royalty;
+        padding: 0 0 4px 0;
+      }
+
+      &-text{
+        font-family: $ff-sen;
+        font-weight: bold;
+        font-size: $fs-36;
+        line-height: $lh-48;
+      }
+
+      &-info{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;  
+      }
+    }
+  }
+
+  &-click{
+    padding-top: 32px;
+
+    &-prev{
+      font-family: $ff-sen;
+      font-size: $fs-24;
+      line-height: $lh-32;
+      color: $granite-canyon; 
+      font-weight: 700;
+      
+
+      &-text{
+        padding: 3px 17px 3px 0 ;
+      }
+    }
+
+    &-next{
+      font-size: $ff-sen;
+      font-size: $fs-28;
+      line-height: $lh-36;
+      font-weight: bold;
+    }
+  }
+   }
+  }
+
+  &-post{
+    padding-top: 88px;
+
+    &__blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 128px 0 64px 0;
+      
+      &-hero {
+          display: flex; 
+          align-items: center;
+          width: 50%; 
+          padding: 0 0 24px 0;
+          
+          &-picture {
+              padding-right: 16px;
+              justify-content: flex-start;  
+          }
+  
+          &-info {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start; 
+  
+              &-text {
+                  font-family: $ff-sen;
+                  font-size: $fs-28;
+                  line-height: $lh-40; 
+                  color: $royalty;
+                  text-align: left;
+                  font-weight: bold;
+                  width: 100%;
+              }
+  
+              &-date {
+                  font-family: $ff-sen;
+                  font-size: $fs-16;
+                  line-height: $lh-28;
+                  color: $granite-canyon;
+                  text-align: left;
+                  width: 100%;
+              }
+          }
+      }
+  
+      &-text {
+          font-family: $ff-sen;
+          font-size: $fs-48;
+          line-height: $lh-64;
+          font-weight: bolder;
+          text-align: left; 
+          width: 50%;
+          padding: 0 0 18px 0;
+         
+      }
+  
+      &-logo {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 50%;
+  
+          &-text {
+              padding-left: 8px;
+              font-family: $ff-sen;
+              font-size: $fs-24;
+              line-height: $lh-32;
+              font-weight: bolder;
+              text-align: left; 
+              margin: 0;
+          }
+      }
+    }
+  
+    &__article{
+      margin: 0 auto; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 64px 218px 0 219px;
+      
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+      }
+
+      &-headers{
+        font-family: $ff-sen;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+  
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+        margin: 0 0 48px;
+      }
+
+      &-texts{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+  
+      &-item{
+        padding-top: 8px;
+        font-family: $ff-sen;
+        font-size: $fs-24;
+        line-height: $lh-32;
+        font-weight: bold;
+        padding: 0 0 0 35px;
+      }
+  
+    }
+  
+    &__information{
+      padding-top: 128px;
+      position: relative;
+
+      &-header{
+        padding-bottom: 48px;
+        font-family: $ff-sen;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+      }
+  
+      &-chain{
+        padding-bottom: 48px;
+
+        &-image{
+          padding: 0 4px;
+        }
+  
+        &-author {
+          padding-top: 32px;
+          font-family: $ff-sen;
+          font-size: $fs-14;
+          line-height: $lh-20;
+          
+          &-name {
+              color: $royalty;
+          }
+        }
+  
+        &-info{
+          font-family: $ff-sen;
+          font-size: $fs-28;
+          line-height: $lh-36;
+          font-weight: bold;
+        }
+  
+        &-text{
+          font-family: $ff-sen;
+          font-size: $fs-16;
+          line-height: $lh-28;
+          color: $granite-canyon;
+        }
+      }
+
+      &-divider{
+        margin: 16px 0 0 0;
+      }
+    }
+  }
+
+  &-about{
+    &__regarding{
+      position: relative;
+      top: 440px;
+      
+      &-overlay {
+        position: absolute;
+        left: 8%;
+        bottom: 80%;
+        z-index: 1;
+
+        &-block{
+          &-left {
+            background-color: $white;
+            padding: 64px;
+    
+            &-header {
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-20;
+              font-weight: bold;
+            }
+      
+            &-text {
+              padding-top: 16px;
+              font-family: $ff-sen;
+              font-size: $fs-48;
+              line-height: $lh-64;
+              font-weight: bold;
+            }
+          }
+      
+          &-right {
+            &-text {
+              font-family: $ff-sen;
+              font-size: $fs-16;
+              line-height: $lh-28;
+              color: $granite-canyon;
+              padding: 102px 0 0 32px;
+            }
+          }
+        }
+  
+        &-picture {
+          padding-top: 200px;
+          width: 100%;
+          height: auto;
+          position: relative;
+          bottom: 104px;
+        }
+      }
+  
+      &-text{
+        max-width: 660px;
+        right: 220px;
+        bottom: 283px;
+        background-color: $canary-diamond;
+        position: relative;
+        z-index: 2;
+  
+        &-item{
+          &-header{
+            padding: 32px 0 0 48px;
+            font-size: $fs-56;
+            line-height: $lh-64;
+            font-weight: bold;
+          }
+  
+          &-info{
+            padding: 0 0 16px 48px;
+            font-family: $ff-sen;
+            font-size: $fs-16;
+            line-height: $lh-28;
+          }
+        }
+      }
+   }
+  
+   &__building{
+    margin-top: 180px;
+    position: relative;
+    background-color: $alpine-goat;
+  
+   &::before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    transform: translateX(-66%);
+    left: 53%;
+    width: 68%;
+    height: 23px;
+    z-index: 99;
+    background: linear-gradient(to left, $canary-diamond 61%, $royalty 39%);
+  }
+
+  html[data-bs-theme="dark"] &::before {
+    background: linear-gradient(to left, $white 61%, $color-dark-grey 39%);
+  }
+  
+    &-left{
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-20;
+        padding: 128px 0 8px 109px;
+      }
+  
+      &-info{
+        font-family: $ff-sen;
+        font-size: $fs-28;
+        line-height: $lh-36;
+        font-weight: bold;
+        padding: 0 0 0 108px;
+      }
+  
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $shady-character;
+        padding: 0 0 48px 108px;
+      }
+    }
+  
+    &-right{ 
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-20;
+        padding: 128px 108px 8px 8px;
+      }
+  
+      &-info{
+        font-family: $ff-sen;
+        font-size: $fs-28;
+        line-height: $lh-36;
+        font-weight: bold;
+        padding: 0 0 0 8px;
+      }
+  
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $shady-character;
+        padding: 0 0 48px 8px;
+      }
+    }
+   }
+  
+   &__creatives{
+    padding-top: 128px;
+  
+    &-blog{
+      padding: 82px 37px 0 0;
+  
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+      }
+  
+      &-info{
+        font-family: $ff-sen;
+        font-size: $fs-24;
+        line-height: $lh-32;
+        font-weight: bold;
+      }
+  
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+      }
+    }
+  
+    &-picture{
+      &::before{
+        content: "";
+        position: absolute;
+        margin-top: 125px;
+        left: 710px;
+        height: 116px;
+        width: 103px;
+        border-radius: 40px 0 0 0;
+        background-color: $canary-diamond;
+      }
+  
+      &-image{
+        width: 100%;
+        height: auto;
+      }
+    }
+   }
+  
+   &__started{
+    padding-top: 128px;
+  
+    &-picture{
+      &-image{
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    &-blog{
+      &::before{
+        content: "";
+        position: absolute;
+        margin-top: 470px;
+        left: 210px;
+        height: 74px;
+        width: 74px;
+        border-radius: 200px ;
+        background-color: $royalty;
+      }
+  
+      &-header{
+        font-family: $ff-sen;
+        font-size: $fs-36;
+        line-height: $lh-48;
+        font-weight: bold;
+        padding: 82px 0 0 64px;
+      }
+  
+      &-info{
+        font-family: $ff-sen;
+        font-size: $fs-24;
+        line-height: $lh-32;
+        font-weight: bold;
+        padding: 0 0 0 64px;
+      }
+  
+      &-text{
+        font-family: $ff-sen;
+        font-size: $fs-16;
+        line-height: $lh-28;
+        color: $granite-canyon;
+        padding: 0 0 0 64px
+      }
+    }
+   }
+  }
+}
+
+// DARK MODE
+html[data-bs-theme="dark"] {
+  background-color: $dark-tone-ink;
+  color: $white;
+
+  .finsweet-project {
+    &__navbar {
+      background-color: $white;
+
+      &-collapse {
+        background-color: $white;
+
+        &-nav-click {
+          color: $black;
+        }
+      }
+
+      &-subscribe {
+        &-list-click {
+          background-color: $black;
+          color: $white;
+
+          &:hover {
+            background-color: $carbon;
+          }
+        }
+      }
+    }
+
+    &-home {
+      &__container {
+        &-left-structure {
+          &-author-name {
+            color: $white;
+          }
+          &-info-wrapper-button {
+            background-color: $black;
+            color: $white;
+
+            &:hover {
+              background-color: $carbon;
+            }
+          }
+        }
+
+        &-right-info {
+          color: $white;
+
+          &-group-part-one {
+            &:hover {
+              background-color: $carbon;
+            }
+          }
+        }
+      }
+
+      &__hero {
+        &-text-wrapper-button {
+          background-color: $black;
+          color: $white;
+
+          &:hover {
+            background-color: $carbon;
+          }
+        }
+      }
+
+      &__abouts {
+        &-block {
+          background-color: $dynamic-black;
+          color: $white;
+
+          &-left {
+            &-text,
+            &-info,
+            &-link-text {
+              color: $white;
+            }
+          }
+
+          &-right {
+            &-text,
+            &-info,
+            &-link-text {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      &__catagory {
+        &-block,
+        &-startup {
+          background-color: $dynamic-black;
+
+          &:hover {
+            background-color: $carbon;
+          }
+        }
+      }
+
+      &__started {
+        &-structure {
+          background-color: $dynamic-black;
+          color: $white;
+
+          &-button-click {
+            background-color: $black;
+            color: $white;
+
+            &:hover {
+              background-color: $carbon;
+            }
+          }
+        }
+      }
+
+      &__logos {
+        &-block-picture-left img,
+        &-block-picture-right img {
+          filter: invert(1) brightness(2);
+        }
+      }
+    }
+
+    &__list {
+      &-block {
+        background-color: $dynamic-black !important;
+        color: $white;
+
+        &:hover {
+          background-color: $carbon !important;
+        }
+
+        &-texts {
+          &-subject {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &__join {
+      &-block {
+        &-head,
+        &-text {
+          color: $white;
+        }
+
+        &-button {
+          background-color: $black;
+          color: $white;
+
+          &:hover {
+            background-color: $carbon;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      background-color: $dynamic-black;
+      color: $white;
+
+      &-below {
+        &-subscribe {
+          background-color: $chromaphobic-black;
+          color: $white;
+
+          &-right-form-button {
+            background-color: $black;
+            color: $white;
+
+            &:hover {
+              background-color: $carbon;
+            }
+          }
+        }
+      }
+    }
+
+    &__blog {
+      &__featured {
+        background-color: $washed-black;
+        color: $white;
+
+        &-building-left-author-name,
+        &-posts-right-frame-header,
+        &-posts-right-frame-info,
+        &-click-prev-text {
+          color: $white;
+        }
+
+        &-building-left-wrapper-button {
+          background-color: $black;
+          color: $white;
+
+          &:hover {
+            background-color: $carbon;
+          }
+        }
+      }
+
+      &__post {
+        &-blog-hero-info-text,
+        &-blog-hero-info-date,
+        &-article-text,
+        &-article-texts,
+        &-information-chain-author-name,
+        &-information-chain-text {
+          color: $white;
+        }
+      }
+    }
+
+    &-about {
+      &__regarding-overlay-block-left,
+      &__regarding-text,
+      &__building {
+        background-color: $dynamic-black;
+        color: $white;
+
+        &-left-text,
+        &-right-text {
+          color: $white;
+        }
+
+        &__creatives-blog-text,
+        &__started-blog-text {
+          color: $white;
+        }
+      }
+
+      &__regarding-overlay-block-right-text {
+        color: $white;
+      }
+    }
+  }
+
+  #myBtn {
+    background-color: $white;
+    color: $granite-canyon;
+
+    &:hover {
+      background-color: $carbon;
+      color: $white;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: $dark-tone-ink;
+  }
+
+  .navbar {
+    background-color: $white;
+  }
+
+  .card {
+    background-color: $dynamic-black;
+    color: $white;
+  }
+}
+
+
+
+
+
